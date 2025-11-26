@@ -1,30 +1,30 @@
 # password_checker.py
-# Mini-proiect Ziua 1: Verificator de parolă
+# Mini-project Day 1: Password checker
 
 def is_strong_password(password: str) -> bool:
-    """Verifică dacă parola este puternică după criteriile definite."""
+    """this function check if the password comply to the given rules."""
     has_min_length = len(password) >= 8
     has_upper = any(ch.isupper() for ch in password)
     has_lower = any(ch.islower() for ch in password)
     has_digit = any(ch.isdigit() for ch in password)
 
-    # Poți adăuga și alte condiții (ex: simboluri speciale)
+    
     is_strong = has_min_length and has_upper and has_lower and has_digit
 
-    print("Verificare parolă:")
-    print(f"- Lungime minimă 8 caractere: {'OK' if has_min_length else 'NU'}")
-    print(f"- Conține litere mari:        {'OK' if has_upper else 'NU'}")
-    print(f"- Conține litere mici:        {'OK' if has_lower else 'NU'}")
-    print(f"- Conține cifre:              {'OK' if has_digit else 'NU'}")
+    print("Paswword check:")
+    print(f"- Minimal length 8 character: {'OK' if has_min_length else 'NO'}")
+    print(f"- Contain capital letter: {'OK' if has_upper else 'NO'}")
+    print(f"- Contain lowercase letters: {'OK' if has_lower else 'NO'}")
+    print(f"- Contain numbers: {'OK' if has_digit else 'NO'}")
 
     return is_strong
 
 
 if __name__ == "__main__":
-    pwd = input("Introdu parola pe care vrei să o verifici: ")
+    pwd = input("Imput the password: ")
 
     if is_strong_password(pwd):
-        print("\n✅ Parola este sigură!")
+        print("\n The password is secure")
     else:
-        print("\n❌ Parola NU este sigură! Încearcă să respecți toate criteriile de mai sus.")
+        print("\n The password is NOT secure!")
 

@@ -1,46 +1,46 @@
-## day1_exercises.py
-## Ziua 1 - Exercițiul 1: variabile și tipuri de date
-#
-#nume = "Nicolae"
-#varsta = 30          # poți schimba cu vârsta ta reală :)
-#oras = "Naas"
-#este_student = False
-#
-#print(f"Numele meu este {nume}, am {varsta} ani, locuiesc în {oras} și este_student={este_student}.")
-#
-## -----------------------------
-## Ziua 1 - Exercițiul 2: input și output
-## -----------------------------
-#
-#nume_user = input("Introdu numele tău: ")
-#varsta_user = input("Introdu vârsta ta: ")
-#oras_user = input("Introdu orașul în care locuiești: ")
-#
-#print(f"Salut, {nume_user}! Ai {varsta_user} ani și locuiești în {oras_user}.")
-#
-## -----------------------------
-## Ziua 1 - Exercițiul 3: condiții if / elif / else
-## -----------------------------
-#
-#age_input = input("Introdu vârsta ta (număr întreg): ")
-#age = int(age_input)
-#
-#if age < 18:
-#    print("Ești minor.")
-#elif age <= 65:
-#    print("Ești adult.")
-#else:
-#    print("Ești senior.")
-##
+# day1_exercises.py
+# Day1 1 - Ex 1: variables and data types
+
+name = "Nicolae"
+age = 30          
+town = "Naas"
+is_student = False
+
+print(f"My name is {name}, I'm {age} yers old, I live in {town} and is_student={is_student}.")
+
 # -----------------------------
-# Ziua 1 - Exercițiul 4: buclă for, numere pare și impare
+# Day 1 - Ex 2: input și output
 # -----------------------------
 
-print("Afișez numerele de la 1 la 20 și dacă sunt pare sau impare:")
+name_user = input("Imput your name: ")
+age_user = input("Imput your age: ")
+town_user = input("Imput your town where toy live: ")
+
+print(f"Hi, {name_user}! You have {age_user} years and you are living in {town_user}.")
+
+# -----------------------------
+# Ziua 1 - Exercițiul 3: condiții if / elif / else
+# -----------------------------
+
+age_input = input("Input your age: ")
+age = int(age_input)
+
+if age < 18:
+    print("You are minor.")
+elif age <= 65:
+    print("You are adult.")
+else:
+    print("You are senior.")
+#
+# -----------------------------
+# Day 1 - Ex 4: Loop for, odd and even numbers
+# -----------------------------
+
+print("I will display numbers from 1 to 20 and I tell if are odd or even:")
 
 for number in range(1, 21):
     if number % 2 == 0:
-        print(f"{number} - PAR")
+        print(f"{number} - EVEN")
     else:
-        print(f"{number} - IMPAR")
+        print(f"{number} - ODD")
 
