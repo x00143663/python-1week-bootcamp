@@ -18,3 +18,17 @@ oras_user = input("Introdu orașul în care locuiești: ")
 
 print(f"Salut, {nume_user}! Ai {varsta_user} ani și locuiești în {oras_user}.")
 
+# -----------------------------
+# Ziua 1 - Exercițiul 3: condiții if / elif / else
+# -----------------------------
+
+age_input = input("Introdu vârsta ta (număr întreg): ")
+age = int(age_input)
+
+if age < 18:
+    print("Ești minor.")
+elif age <= 65:
+    print("Ești adult.")
+else:
+    print("Ești senior.")
+
