@@ -52,3 +52,23 @@ print("After updating age:", user)
 for key, value in user.items():
     print(f"{key} -> {value}")
 
+
+# -----------------------------
+# Day 2 - Exercise 3: Sets
+# -----------------------------
+
+# Create a set
+unique_numbers = {1, 2, 3, 4, 4, 2, 1}
+print("\nSet with duplicates removed:", unique_numbers)
+
+# Add new value
+unique_numbers.add(10)
+print("After adding 10:", unique_numbers)
+
+# Check membership
+print("Is 3 in the set?", 3 in unique_numbers)
+
+# Remove item
+unique_numbers.discard(2)
+print("After removing 2:", unique_numbers)
+
